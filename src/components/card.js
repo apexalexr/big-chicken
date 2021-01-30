@@ -4,11 +4,15 @@ import './card.css'
 
 class Card extends Component {
     render() {
-        return <div Class="card">
-            <p>Tendies</p>
-            <div Class="imgContainer"><img src={picture} alt="Logo"/></div>
-            <p>Descriptor</p>
-        </div>;
+        return(
+            <div className="card">
+                    <div>
+                        <img src={picture} alt="Logo"/>
+                    </div>
+                    <p className="title">Tendies</p>
+                    {/* <p className="descr">Descriptor</p> */}
+            </div>
+        )
     }
 }
 

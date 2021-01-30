@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #dbdcdf;
 }
 
 .App-logo {
@@ -27,20 +28,20 @@
 .App-link {
   color: #61dafb;
 }
-
-.parent {
+.parent{
+  align-self: auto;
   display: inline-grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto;
-  justify-content: space-around;
-  grid-gap: 50px;
+  grid-template-rows: 40% 30%;
+  grid-template-columns: 100%;
+  height: 100%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.topHalf {
+  align-self: end;
+}
+.bottomHalf {
+  display: inline-grid;
+  grid-template-columns: 20% 20% 20%;
+  justify-content: center;
+  grid-gap: 50px;
+  align-self: start;
 }
